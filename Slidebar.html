@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Side Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            transition: margin-left 0.3s ease;
+        }
+
+        .navbar {
+            height: 100%;
+            width: 200px;
+            background-color: #333;
+            position: fixed;
+            left: -200px; /* Initially hidden */
+            transition: left 0.3s ease;
+        }
+
+        .navbar a {
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .content {
+            margin-left: 20px;
+            padding: 20px;
+            transition: margin-left 0.3s ease;
+            background-color: rgb(199, 216, 255);
+            width: 100%;
+        }
+
+        .show {
+            left: 0; /* Show the navbar */
+        }
+
+        .show-content {
+            margin-left: 220px; /* Shift content when navbar is shown */
+        }
+
+        .title {
+            color: #dc0000;
+        }
+
+        #toggleButton {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="content" id="content">
+        
+        <h1 class="title"><i class="fa-solid fa-bars" id="toggleButton"></i> Welcome to My Website</h1>
+        <!-- <p>This is some content.</p> -->
+    </div>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            const navbar = document.getElementById('navbar');
+            const content = document.getElementById('content');
+            navbar.classList.toggle('show');
+            content.classList.toggle('show-content');
+        });
+    </script>
+</body>
+</html>

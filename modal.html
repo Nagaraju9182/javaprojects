@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Project with Logo</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="modal.css" />
+  </head>
+  <body>
+    <!-- header with logo -->
+    <header>
+      <img src="logo.svg" alt="Logo" class="logo" />
+    </header>
+
+    <main>
+      <h1>Modal Project</h1>
+      <!-- button to open modal -->
+      <button class="btn modal-btn">Open Modal</button>
+    </main>
+
+    <!-- modal -->
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <button class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- modal content with image -->
+        <h2>Modal Content</h2>
+        <img src="modalpic.jpg" alt="Sample Image" />
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="modal.js"></script>
+  </body>
+</html>
