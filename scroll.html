@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Project</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="scroll.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <img src="logo.svg" class="logo" alt="Logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <li><a href="#home" class="scroll-link">home</a></li>
+          <li><a href="#about" class="scroll-link">about</a></li>
+          <li><a href="#services" class="scroll-link">services</a></li>
+          <li><a href="#tours" class="scroll-link">tours</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- sections -->
+    <header id="home" class="banner">
+      <div class="container">
+        <h1>scroll project</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#tours" class="btn btn-white">Explore Tours</a>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="section-center">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-center">
+        <h2>Our Services</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+    </section>
+
+    <section id="tours" class="section">
+      <div class="section-center">
+        <h2>Tours</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; <span id="date"></span> Scroll Project</p>
+    </footer>
+
+    <!-- top link -->
+    <a href="#home" class="top-link">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- javascript -->
+    <script src="scroll.js"></script>
+  </body>
+</html>
